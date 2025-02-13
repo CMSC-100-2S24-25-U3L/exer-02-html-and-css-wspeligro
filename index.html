@@ -1,1 +1,224 @@
 "exer02" 
+
+<!DOCTYPE html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body { /* 0 margins and padding for the body */
+            margin: 0;
+            padding: 0;
+        }
+        header { /* for the header */
+            display: flex;
+            align-items: center;
+            background-color: #3C3D37;
+            padding: 15px 20px;
+            justify-content: space-between;
+        }
+        .logo { /* image logo */
+            width: 50px;
+            height: 50px;
+            margin-left: 15px;
+        }
+        nav { /* navigation bar */
+            display: flex;
+            gap: 20px;
+        }
+        nav button { /* buttons for navigation bar */
+            color: white;
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 10px 15px;
+            background: #555;
+            border-radius: 5px;
+            transition: background 0.5s, border 0.5s;
+        }
+        nav button:hover {
+            background: #777;
+        }
+        .main { /* div class for the main topic */
+            width: 80%;
+            margin: 20px auto;
+            background: #ECDFCC;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .profile { /* profile */
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .profile img { /* profile image */
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+        }
+        p.profile { /* for the paragraph in profile */
+            font-family: Helvetica;
+        }
+        h2.aboutme { /* for the title "about me" in profile */
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+        span.skills-text { /* text in skills */
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+        .skills-projects{
+            display: flex;
+            flex-direction: column;
+        }
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+        .progress-bar { /* for the progress bar */
+            flex: 1;
+            height: 10px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+        .progress { 
+            height: 100%;
+            background-color: #555;
+        }
+        .projects { /* grid for project section */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .projects div { /* division for project */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .projects img { /* images in the project section */
+            width: 250px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        .text { /* texts in the project section */
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+        footer { /* footer */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #3C3D37;
+            padding: 10px;
+            position: relative;
+        }
+        .footer-logo { /* images of logo */
+            width: 50px;
+            margin-right: 15px;
+        }
+        .return { /* return to the top */
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+        }
+        .return a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+    <body style = "background-color:#697565">
+        <header>
+            <img src ="logo.png" class = "logo"> 
+            <nav>
+                <button>ABOUT ME</button>
+                <button>SKILLS</button>
+                <button>PROJECTS</button>
+                <button>CONTACT</button>
+            </nav>    
+        </header>
+        <div class = "main">
+            <div class = "profile">
+                <img src ="profile.png">
+                <div>
+                    <h2 class = "aboutme">ABOUT ME</h2>
+                    <p class = "profile">Good Day! I am Will Andre S. Peligro, an aspiring Frontend Developer. 
+                        I love solving problems and making functioning and user-friendly web applications. I 
+                        also enjoy learning and exploring other computer languages. On my past time I like dancing,
+                        playing games, and reading.</p>
+                </div>
+            </div>
+
+            <hr style = "height:1px; background-color:black">
+
+            <div class = "skills-projects">
+                <div class>
+                    <h2 style = "text-align:center; font-family:Helvetica;">SKILLS</h2>
+                    <div class = "skill-list">
+                        <div class = "skill-item">
+                            <span class = "skills-text">PYTHON</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 80%;"></div></div>
+                            <span class = "skills-text">80%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">HTML & CSS</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 90%;"></div></div>
+                            <span class = "skills-text">90%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">JAVASCRIPT</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 90%;"></div></div>
+                            <span class = "skills-text">90%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">DART</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 70%;"></div></div>
+                            <span class = "skills-text">70%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">R</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 70%;"></div></div>
+                            <span class = "skills-text">70%</span>
+                        </div>
+                    </div>
+                    <hr style = "height:1px; background-color:black">
+                </div>
+
+                <h2 style = "text-align:center; font-family:Helvetica;">PROJECTS</h2>
+                <div class = "projects">
+                    <div class = "text">
+                        <p>FOOD DELIVERY WEBSITE</p>
+                        <img src = "project_1.png">
+                    </div>
+                    <div class = "text">
+                        <p>PORTFOLIO</p>
+                        <img src = "project_2.png">
+                    </div>
+                    <div class = "text">
+                        <p>IDLE GAME</p>
+                        <img src = "project_3.png">
+                    </div>
+                    <div class = "text">
+                        <p>CAFE WEBSITE</p>
+                        <img src = "project_4.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src = "logo.png" class = "footer-logo">
+            <p style = "color:white; font-family:Helvetica;">&copy; 2025 Will Andre S. Peligro. All rights reserved.<br>Los Banos, Laguna<br>Contact number:09212423738<br>Email address: wspeligro@up.edu.ph</p>
+            <div class = "return">
+                <a href = "#top">RETURN</a>
+            </div>
+        </footer>
+    </body>
+</body>
+</html>
