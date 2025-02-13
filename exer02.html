@@ -60,6 +60,55 @@
             font-family: Helvetica;
             font-weight: bold;
         }
+        span.skills-text { /* text in skills */
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+        .skills-projects{
+            display: flex;
+            flex-direction: column;
+        }
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+        .progress-bar { /* for the progress bar */
+            flex: 1;
+            height: 10px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+        .progress { 
+            height: 100%;
+            background-color: #555;
+        }
+        .projects { /* grid for project section */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .projects div { /* division for project */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .projects img { /* images in the project section */
+            width: 250px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        .text { /* texts in the project section */
+            font-family: Helvetica;
+            font-weight: bold;
+        }
 
     </style>
     <body style = "background-color:#697565">
@@ -83,7 +132,61 @@
                         playing games, and reading.</p>
                 </div>
             </div>
+
             <hr style = "height:1px; background-color:black">
+
+            <div class = "skills-projects">
+                <div class>
+                    <h2 style = "text-align:center; font-family:Helvetica;">SKILLS</h2>
+                    <div class = "skill-list">
+                        <div class = "skill-item">
+                            <span class = "skills-text">PYTHON</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 80%;"></div></div>
+                            <span class = "skills-text">80%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">HTML & CSS</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 90%;"></div></div>
+                            <span class = "skills-text">90%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">JAVASCRIPT</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 90%;"></div></div>
+                            <span class = "skills-text">90%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">DART</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 70%;"></div></div>
+                            <span class = "skills-text">70%</span>
+                        </div>
+                        <div class = "skill-item">
+                            <span class = "skills-text">R</span>
+                            <div class = "progress-bar"><div class = "progress" style = "width: 70%;"></div></div>
+                            <span class = "skills-text">70%</span>
+                        </div>
+                    </div>
+                    <hr style = "height:1px; background-color:black">
+                </div>
+
+                <h2 style = "text-align:center; font-family:Helvetica;">PROJECTS</h2>
+                <div class = "projects">
+                <div class = "text">
+                    <p>FOOD DELIVERY WEBSITE</p>
+                    <img src = "project_1.png">
+                </div>
+                <div class = "text">
+                    <p>PORTFOLIO</p>
+                    <img src = "project_2.png">
+                </div>
+                <div class = "text">
+                    <p>IDLE GAME</p>
+                    <img src = "project_3.png">
+                </div>
+                <div class = "text">
+                    <p>CAFE WEBSITE</p>
+                    <img src = "project_4.png">
+                </div>
+            </div>
         </div>
     </body>
 </body>
