@@ -4,8 +4,11 @@ Full Name: Will Andre S. Peligro
 
 Degree Program: BS Computer Science
 
-Live Website Link: 
+Live Website Link: file:///C:/Users/andre/OneDrive/Desktop/exer-02-html-and-css-wspeligro/exer02.html
 
 Steps on how to create GitHub page: 
+1. Clone the repository
+2. Enter the project folder and add filename.html
+3. Add, commit, then push.
 
-What are your key takeaways from this exercise?
+What are your key takeaways from this exercise? always follow your code because it will get confusing
